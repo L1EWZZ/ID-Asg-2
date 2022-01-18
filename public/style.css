@@ -1,0 +1,11 @@
+/*import fonts from googleapis*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+html, body{
+    margin: 0;
+}
+
+:root{
+    --primary-gradient:linear-gradient(to bottom, #fff, #adadaa)
+    --label-gradient:linear-gradient(to bottom, #536452 0%, #57dd52 40%, #95e669 100%)
+}
