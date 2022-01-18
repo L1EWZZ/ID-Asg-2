@@ -45,3 +45,17 @@ html, body{
 .nav-items .navbar-nav{
     list-style-type: none;  /*remove the dots of the listing*/
 }
+
+.navbar-nav .nav-link{  /*Home, Quizes, Contact Us and Sign In button arrangment*/
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 0.9rem;  /*add some margin between navigation items*/
+}
+
+.navbar-nav .sign-in{  /*updating design of sign in button*/
+    border: none;
+    padding: .4rem 2rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    background: #ee5;
+}
