@@ -9,3 +9,19 @@ html, body{
     --primary-gradient:linear-gradient(to bottom, #fff, #adadaa)
     --label-gradient:linear-gradient(to bottom, #536452 0%, #57dd52 40%, #95e669 100%)
 }
+
+.container{
+    background: #282c34;
+    background: url('../assets/Night_3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:98vw;
+    height: 89vh;
+    font-size: calc(10px + 2vmin);
+    color:white;
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+/*Navigation*/
