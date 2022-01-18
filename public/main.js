@@ -6,6 +6,9 @@
     const seconds = Selector('.seconds');
     const container = Selector('.container');
 
+    const checkbox = document.getElementById('switch');
+    const img = document.getElementById("shops");
+
     //set interval method
     setInterval(() => {
         const time = new Date();
@@ -16,6 +19,15 @@
         seconds.textContent = time.getSeconds() < 9 ? `0${time.getSeconds()}`: time.getSeconds();  //return the current seconds
         }, 1000);
 
+        //checkbox to turn off light
+        //method if event(checkbox is checked) happens, change the image of hotels and lights
+        checkbox.onchange = (event) => {
+            if (event.target.checked) {
+                img.src = "../assets/Night_5.png";
+            } else {
+                img.src = "../assets/Night_4.png";
+            }
+        }
 })();
 
 //instead writing out one by one for each hours, minutes and seconds, i can create this function to select each one
