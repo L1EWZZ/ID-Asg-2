@@ -6,9 +6,10 @@ html, body{
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
+/*gradient vairables*/
 :root{
-    --primary-gradient:linear-gradient(to bottom, #fff, #adadaa)
-    --label-gradient:linear-gradient(to bottom, #536452 0%, #57dd52 40%, #95e669 100%)
+    --primary-gradient : linear-gradient(to bottom, #ffffff, #adadaa);
+    --label-gradient: linear-gradient(to bottom, #536452 0%, #57dd52 40%, #95e669 100%);
 }
 
 .container{  /*setting width, height, colors of whole image container*/
@@ -16,7 +17,7 @@ html, body{
     background: url('../assets/Night_3.png');
     background-size: cover;
     background-repeat: no-repeat;
-    width:97vw;
+    width:92vw;
     height: 89vh;
     font-size: calc(10px + 2vmin);
     color:white;
@@ -50,7 +51,7 @@ html, body{
 .navbar-nav .nav-link{  /*Home, Quizes, Contact Us and Sign In button arrangment*/
     display: inline-block;
     font-size: 1rem;
-    margin: 0 0.9rem;  /*add some margin between navigation items*/
+    margin: 0 .9rem;  /*add some margin between navigation items*/
 }
 
 .navbar-nav .sign-in{  /*updating design of sign in button*/
@@ -60,6 +61,29 @@ html, body{
     margin-right: 2rem;
     background: #ee5;
     font-family: 'Oswald', sans-serif;
-
-
 }
+
+/*styling checkbox*/
+.lightswitch {
+    width: 40px;
+    height: 7px;
+    background: rgb(192, 188, 188);
+    margin: 20px auto;
+    border-radius: 100px;
+    position: relative;
+}
+
+.lightswitch label{
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: #0f0c29;
+    background: var(--label-gradient);
+    border-radius: 50px;
+    position: absolute;
+    top: -6px;
+    left: -1;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, alpha);
+    transition: all .5s ease;
+}
+
