@@ -1,0 +1,106 @@
+body{
+    background: #007bff;
+}
+
+.start_button,
+.Info_box,
+.quiz_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+
+
+.start_button button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #007bff;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #ffff;
+    cursor: pointer;
+}
+
+.Info_box{
+    display: none;
+    width: 540px;
+    background: #ffff;
+    border-radius: 5px;
+}
+
+.Info_box .Info_heading{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightyellow;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.Info_box .Info_List{
+    padding: 15px 15px;
+}
+
+.Info_box .Info_List .instruction{
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.Info_box .Info_List .instruction span{
+    font-weight: 800;
+    color: red;
+}
+
+.Info_box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid lightyellow;
+}
+
+.Info_box .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid #007bff;
+    background: #007bff;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.buttons button.exit_btn{
+    color: #ffff;
+    border-color: #007bff;
+
+}
+
+.buttons button.exit_btn:hover{
+    background: #0263ca;
+}
+
+.buttons button.continue_btn{
+    color: #007bff;
+    
+}
+
+.buttons button.continue_btn:hover{
+    color: #ffff;
+    border-color: #007bff;
+}
+
+.quiz_box{
+    
+}
