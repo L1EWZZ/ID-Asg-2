@@ -87,3 +87,16 @@ html, body{
     transition: all .5s ease;
 }
 
+.lightswitch input[type="checkbox"]{
+    position: absolute;
+    left:-8px;
+    top: -6px;
+    width: 50px;
+    opacity: 0;  /*make checkbox invisible*/
+}
+
+/*when the check box i checked, label will move accordingly and change color*/
+.lightswitch input[type="checkbox"]:checked + label{
+    left:25px;
+    background: tomato;
+}
