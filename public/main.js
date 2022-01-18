@@ -9,9 +9,11 @@
     //set interval method
     setInterval(() => {
         const time = new Date();
-        hours.textContent = time.getHours();  //return the current hours
-        minutes.textContent = time.getMinutes();  //return the current hours
-        seconds.textContent = time.getSeconds();  //return the current hours
+
+        //getting the current hours. if hours is less than 9, call the conditional statement, show hours with default 0
+        hours.textContent = time.getHours() < 9 ? `0${time.getHours()}`: time.getHours();  
+        minutes.textContent = time.getMinutes() < 9 ? `0${time.getMinutes()}`: time.getMinutes();  //return the current minutes
+        seconds.textContent = time.getSeconds() < 9 ? `0${time.getSeconds()}`: time.getSeconds();  //return the current seconds
         }, 1000);
 
 })();
