@@ -1,5 +1,6 @@
 /*import fonts from googleapis*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 html, body{
     scroll-behavior: smooth;
@@ -164,11 +165,12 @@ h1{
     
 }
 
-#section3 p{
+#homeSection p{
+    font-size: larger;
+    text-align: center;
     color: lightblue;
-}
-
-#section3 h3
-{
-    color: blue;
+    margin: 100px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    word-spacing: 5px;
 }
