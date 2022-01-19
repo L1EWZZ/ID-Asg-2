@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 html, body{
+    scroll-behavior: smooth;
     margin: 0;
+    padding: 0;
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
@@ -30,9 +32,8 @@ html, body{
 .navbar{
     display: grid;
     grid-template-columns: 10% 90%;  /*first column have 10% width and second column have 90% width*/
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
     font-family: 'Oswald', sans-serif;
+
 }
 
 .navbar .nav-items{
@@ -126,3 +127,41 @@ html, body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+#section1{
+    height: 700px;
+    font-size: calc(7px + 2vmin);
+    color:white;
+    text-align: center;
+}
+
+#section2{
+    height: 700px;
+    font-size: calc(7px + 2vmin);
+    color:white;
+    text-align: center;
+}
+
+#section3{
+    height: 700px;
+    font-size: calc(7px + 2vmin);
+    color:white;
+    text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+    margin: 100px;
+    text-align: center;
+    padding:0;
+    
+}
+
+#section3 p{
+    color: lightblue;
+}
+
+#section3 h3
+{
+    color: blue;
+}
