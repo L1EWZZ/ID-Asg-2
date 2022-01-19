@@ -128,21 +128,28 @@ html, body{
     -webkit-text-fill-color: transparent;
   }
 
-#section1{
+#homeSection{
     height: 700px;
     font-size: calc(7px + 2vmin);
     color:white;
     text-align: center;
 }
 
-#section2{
+#coursesSection{
     height: 700px;
     font-size: calc(7px + 2vmin);
     color:white;
     text-align: center;
 }
 
-#section3{
+#quizSection{
+    height: 700px;
+    font-size: calc(7px + 2vmin);
+    color:white;
+    text-align: center;
+}
+
+#signInSection{
     height: 700px;
     font-size: calc(7px + 2vmin);
     color:white;
@@ -150,7 +157,7 @@ html, body{
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 100px;
     text-align: center;
     padding:0;
