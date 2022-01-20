@@ -1,8 +1,11 @@
 /*import fonts from googleapis*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 html, body{
+    scroll-behavior: smooth;
     margin: 0;
+    padding: 0;
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
@@ -30,9 +33,8 @@ html, body{
 .navbar{
     display: grid;
     grid-template-columns: 10% 90%;  /*first column have 10% width and second column have 90% width*/
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
     font-family: 'Oswald', sans-serif;
+
 }
 
 .navbar .nav-items{
@@ -126,3 +128,49 @@ html, body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+#homeSection{
+    height: 700px;
+    font-size: calc(7px + 2vmin);
+    color:white;
+    text-align: center;
+}
+
+#coursesSection{
+    height: 700px;
+    font-size: calc(7px + 2vmin);
+    color:white;
+    text-align: center;
+}
+
+#quizSection{
+    height: 700px;
+    font-size: calc(7px + 2vmin);
+    color:white;
+    text-align: center;
+}
+
+#signInSection{
+    height: 700px;
+    font-size: calc(7px + 2vmin);
+    color:white;
+    text-align: center;
+}
+
+h1{
+    font-size: 4rem;
+    margin: 100px;
+    text-align: center;
+    padding:0;
+    
+}
+
+#homeSection p{
+    font-size: larger;
+    text-align: center;
+    color: lightblue;
+    margin: 100px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    word-spacing: 5px;
+}
