@@ -39,10 +39,12 @@ const result_box = document.querySelector(".result_box");
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
+//go back to starting position when clicked on "Quit Quiz"
 quit_quiz.onclick = ()=>{
     window.location.reload();
 }
 
+//restart the quiz, reset everything when cliked on "Replay Quiz"
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz");
     result_box.classList.remove("activeResult");
@@ -60,6 +62,7 @@ restart_quiz.onclick = ()=>{
     next_btn.style.display = "none";
 }
 
+//finished the question and user clicks on "next" button to proceed to next question
 next_btn.onclick = ()=>{
     if(que_count < questions.length -1 ){
         que_count++;
@@ -83,8 +86,8 @@ next_btn.onclick = ()=>{
 function showQuestions(index){
     const que_text = document.querySelector(".queue_text");
     
-    let que_tag = '<span>'+ questions[index].num + '.' + questions[index].question +'</span>';
-    let option_tag = '<div class="option">' + questions[index].option[0] + '<span></span></div>'
+    let que_tag = '<span>'+ questions[index].num + '.' + questions[index].question +'</span>';  //"1.What does HTML stands for?""
+    let option_tag = '<div class="option">' + questions[index].option[0] + '<span></span></div>'  //all the options provided for question
                      + '<div class="option">' + questions[index].option[1] + '<span></span></div>'
                      + '<div class="option">' + questions[index].option[2] + '<span></span></div>'
                      + '<div class="option">' + questions[index].option[3] + '<span></span></div>'; 
@@ -100,6 +103,7 @@ function showQuestions(index){
 let tickIcon = '<div class="icon correct"><i class="fas fa-check"></i></div>'
 let crossIcon = '<div class="icon wrong"><i class="fas fa-times"></i></div>'
 
+//if correct or wrong 
 function optionSelected(answer){
     clearInterval(counter);
     clearInterval(counterLine);
@@ -112,13 +116,14 @@ function optionSelected(answer){
         console.log(userScore);
         answer.classList.add("correct");
         console.log("Correct Answer!");
-        answer.insertAdjacentHTML("beforeend", tickIcon);
+        answer.insertAdjacentHTML("beforeend", tickIcon);  //tick icon for correct
     }
     else{
         answer.classList.add("incorrect");
         console.log("Sorry it is an incorrect answer.");
-        answer.insertAdjacentHTML("beforeend", crossIcon);
+        answer.insertAdjacentHTML("beforeend", crossIcon);  //cross icon for wrong 
 
+        //if wrong answer chosen, will show correct answer 
         for (let i = 0; i < allOptions; i++) {
             if(option_list.children[i].textContent == correctAns){
                 option_list.children[i].setAttribute("class", "option correct");
@@ -133,6 +138,7 @@ function optionSelected(answer){
     next_btn.style.display = "block";
 }
 
+//show different result messages when have different scores 
 function showResultBox(){
     info_box.classList.remove("activeInfo");
     info_box.classList.remove("activeQuiz");
@@ -152,6 +158,7 @@ function showResultBox(){
     }
 }
 
+//count the number of questions (1 out of 5 questions etc)
 function queCounter(index){
     const bottom_ques_counter = quiz_box.querySelector(".total_que");
     let totalQuesCountTag = '<span><p>'+ index +'</p><p>of</p><p>'+ questions.length +'</p><p>Questions</p></span>';
@@ -159,6 +166,7 @@ function queCounter(index){
 
 }
 
+//15 seconds timer 
 function startTimer(time){
     counter = setInterval(timer, 1000);
     function timer(){
@@ -190,6 +198,7 @@ function startTimer(time){
     }
 }
 
+//to stop the timer for each question
 function startTimerLine(time){
     counterLine = setInterval(timer, 29);
     function timer(){
