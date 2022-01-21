@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
     background: #007bff;
 }
@@ -53,7 +61,7 @@ body{
     align-items: center;
     padding: 0 35px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
 
 }
 
@@ -67,7 +75,7 @@ body{
 }
 
 .Info_box .Info_List .instruction span{
-    font-weight: 800;
+    font-weight: 600;
     color: red;
 }
 
@@ -85,33 +93,34 @@ body{
     height: 40px;
     width: 100px;
     outline: none;
-    border: 1px solid #007bff;
-    background: #007bff;
+    border: 1px solid transparent;
     border-radius: 5px;
     color: #ffff;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
 }
 
 .buttons button.exit_btn{
-    color: #ffff;
+    color: #007bff;
     border-color: #007bff;
 
 }
 
 .buttons button.exit_btn:hover{
-    background: #0263ca;
+    background: #007bff;
+    color: #ffff;
 }
 
 .buttons button.continue_btn{
-    color: #007bff;
-    
+    color: #ffff;
+    background: #007bff;
 }
 
 .buttons button.continue_btn:hover{
-    color: #ffff;
+    background: #ffff;
+    color: #007bff;
     border-color: #007bff;
 }
 
@@ -142,19 +151,19 @@ body{
     font-weight: 600;
 }
 
-.quiz_box header.timer{
+.quiz_box header .timer{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 145px;
-    height: 50px;
+    height: 45px;
     background: lightcyan;
-    border: 1px solid lightskyblue;
+    border: 1px solid lightyellow;
     border-radius: 5px;
     padding: 0 8px;
 }
 
-.quiz_box header.timer .Timer_text{
+.quiz_box header .timer .Timer_text{
     font-weight: 400;
     font-size: 17px;
     user-select: none;
@@ -240,8 +249,8 @@ section .option_list .option:hover{
 
 .option_list .option .icon.wrong{
     color: #a42834;
-    border-color: #f8d7da;
-    background: #a42834;
+    background: #f8d7da;
+    border-color: #a42834;
 }
 
 .option_list .option.correct{
@@ -269,7 +278,7 @@ section .option_list .option:hover{
     justify-content: space-between;
 }
 
-.quix_box footer .total_que span{
+.quiz_box footer .total_que span{
     display: flex;
     user-select: none;
 }
@@ -338,7 +347,7 @@ footer .next_btn:hover{
 }
 
 .score_text span p{
-    font-weight: 500;
+    font-weight: 600;
     padding: 0 4px;
 }
 
@@ -349,7 +358,7 @@ footer .next_btn:hover{
 
 .result_box .buttons button{
     margin: 0 10px;
-    height: 40px;
+    height: 45px;
     padding: 0 20px;
     border: none;
     outline: none;
