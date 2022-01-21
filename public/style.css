@@ -1,6 +1,8 @@
 /*import fonts from googleapis*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Mochiy+Pop+P+One&display=swap');
 
 html, body{
     scroll-behavior: smooth;
@@ -133,7 +135,7 @@ html, body{
     padding-bottom: 10%;
     font-size: calc(7px + 2vmin);
     color:white;
-    background: url("../assets/programming\ evolution.jpg");
+    background-image: url("../assets/programming\ evolution.jpg");
     background-blend-mode: screen;
     border-width: 0;
     border:0;
@@ -167,16 +169,18 @@ html, body{
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 3.2rem;
     margin: 60px;
     text-align: center;
     padding:0;
-    
+    font-family: 'Mochiy Pop P One', sans-serif;
 }
 
 #homeSection h2{
     color: yellow;
     font-size: 40px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
 }
 
 p.paragraphAboutJob{
