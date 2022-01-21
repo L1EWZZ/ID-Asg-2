@@ -130,10 +130,19 @@ html, body{
   }
 
 #homeSection{
-    height: 700px;
+    padding-bottom: 10%;
     font-size: calc(7px + 2vmin);
     color:white;
+    background: url("../assets/programming\ evolution.jpg");
+    background-blend-mode: screen;
+    border-width: 0;
+    border:0;
+    background-size: cover;
+    margin: auto;
+    margin-top: 4rem;
     text-align: center;
+    background-repeat: no-repeat;
+    height: 95vh;
 }
 
 #coursesSection{
@@ -144,7 +153,7 @@ html, body{
 }
 
 #quizSection{
-    height: 00px;
+    height: 500px;
     font-size: calc(7px + 2vmin);
     color:white;
     text-align: center;
@@ -166,18 +175,43 @@ h1{
 }
 
 #homeSection h2{
-    color: blueviolet;
+    color: yellow;
     font-size: 40px;
 }
 
-#homeSection p{
+p.paragraphAboutJob{
     font-size: 26px;
     text-align: center;
-    color: lightblue;
+    color: white;
     margin: 30px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     word-spacing: 5px;
+    display: flex;
+    line-height: 1.8em;
+}
+
+button.jobButton{
+    text-align: center;
+    border: none;
+    padding: .2rem 4rem;
+    border-radius: 3rem;
+    margin-right: 2rem;
+    background: #ee5;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+}
+
+#homeSection p.paragraph{
+    font-size: 26px;
+    text-align: center;
+    color: white;
+    margin: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    word-spacing: 5px;
+    display: flex;
+    line-height: 1.8em;
 }
 
 button.quizLink{
