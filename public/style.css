@@ -155,7 +155,7 @@ html, body{
 }
 
 #quizSection{
-    height: 500px;
+    height: 700px;
     font-size: calc(7px + 2vmin);
     color:white;
     text-align: center;
@@ -228,4 +228,60 @@ button.quizLink{
     height: 60px;
     background: lightblue;
     font-family: 'Oswald', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+.contact-title{
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 100px;
+    color: blueviolet;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+.contact-title h1{
+    font-size: 32px;
+    line-height: 10px;
+}
+.contact-title h2{
+    font-size: 16px;
+}
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+.form-control{
+    width: 600px;
+    background:transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color:#fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+input{
+    height:45px;
+}
+form .submit{
+    background: lightblue;
+    border-color: transparent;
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+h2.textHeader
+{
+    font-family: 'Prompt', sans-serif;
+    color: white;
 }
