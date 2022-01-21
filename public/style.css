@@ -144,7 +144,7 @@ html, body{
 }
 
 #quizSection{
-    height: 700px;
+    height: 00px;
     font-size: calc(7px + 2vmin);
     color:white;
     text-align: center;
@@ -159,18 +159,35 @@ html, body{
 
 h1{
     font-size: 4rem;
-    margin: 100px;
+    margin: 60px;
     text-align: center;
     padding:0;
     
 }
 
+#homeSection h2{
+    color: blueviolet;
+    font-size: 40px;
+}
+
 #homeSection p{
-    font-size: larger;
+    font-size: 26px;
     text-align: center;
     color: lightblue;
-    margin: 100px;
+    margin: 30px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     word-spacing: 5px;
+}
+
+button.quizLink{
+    font-size: larger;
+    background: black;
+    border: none;
+    padding: 0 100px;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    height: 60px;
+    background: lightblue;
+    font-family: 'Oswald', sans-serif;
 }

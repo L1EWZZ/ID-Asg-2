@@ -83,6 +83,7 @@ next_btn.onclick = ()=>{
     }
 }
 
+//function to show all questions and their index
 function showQuestions(index){
     const que_text = document.querySelector(".queue_text");
     
