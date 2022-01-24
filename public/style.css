@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
 html, body{
     scroll-behavior: smooth;
@@ -161,6 +162,13 @@ html, body{
     text-align: center;
 }
 
+#quizSection h2{
+    color: lightblue;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    word-spacing: 5px;
+
+}
+
 #signInSection{
     height: 700px;
     font-size: calc(7px + 2vmin);
@@ -226,7 +234,7 @@ button.quizLink{
     border-radius: 1rem;
     margin-right: 2rem;
     height: 60px;
-    background: lightblue;
+    background: yellow;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -271,14 +279,15 @@ input{
     height:45px;
 }
 form .submit{
-    background: lightblue;
+    background: yellow;
     border-color: transparent;
-    color:#fff;
+    color:blueviolet;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
     height: 50px;
     margin-top: 20px;
+    border-radius: 8px;
 }
 h2.textHeader
 {
