@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --primary-gradient : linear-gradient(to bottom, #ffffff, #adadaa);
+    --label-gradient: linear-gradient(to bottom, #536452 0%, #57dd52 40%, #95e669 100%);
+}
+
 body{
-    background: #007bff;
+    background: url('assets/picture-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    max-width: max-content;
+    max-height: max-content;
+    object-fit: cover;
 }
 
 .start_button,
@@ -358,7 +368,7 @@ footer .next_btn:hover{
 
 .result_box .buttons button{
     margin: 0 10px;
-    height: 45px;
+    height: 60px;
     padding: 0 20px;
     border: none;
     outline: none;
