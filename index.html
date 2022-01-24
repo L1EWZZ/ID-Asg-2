@@ -19,7 +19,7 @@
                     <li class="nav-link"><a href="#homeSection" style="text-decoration:none; background-color: white; border: none;
                         padding: .1rem 2rem;
                         border-radius: 1rem;
-                        margin-right: 2rem;">Home</a></li>
+                        margin-right: 2rem;">About</a></li>
                     <li class="nav-link"><a href="#coursesSection" style="text-decoration:none; background-color: white; border: none;
                         padding: .1rem 2rem;
                         border-radius: 1rem;
@@ -46,24 +46,55 @@
         
     </div>
 
+    
     <!--sections of text under landing page-->
     <div id="homeSection">
-        <h1>This is Home</h1>
-        <h1>Why Programming?</h1>
-        <p>Computer programming is important today because so much of our world is automated. 
+        <h1>About Programming</h1>
+        <h2>Why Programming?</h2>
+        <p class="paragraph">Computer programming is important today because so much of our world is automated. 
             Humans need to be able to control the interaction between people and machines. 
             Since computers and machines are able to do things so efficiently and accurately, 
             we use computer programming to harness that computing power.</p>
+        <h2></h2>
+        <h2>Job Opportunities</h2>
+        <p class="paragraphAboutJob">Skilled programmers are some of the most well-paid technology professionals in today's market. 
+            Specialized skills such as mobile applications development or enterprise resource planning (ERP) 
+            experience can boost a programming salary even more. Unsure about where programming can bring you? Click the button below!</p>
+            <a href="https://www.jobstreet.com.sg/en/job-search/programmer-jobs/" target="_blank"><button class="jobButton">Jobs</button></a>
     </div>
     <div id="coursesSection">
         <h1>This is courses</h1>
     </div>
+
+    <div id="signInSection">
+        <h1>Let us Contact You!</h1>
+
+        <div class="contact-title">
+            <h1>Leave a message!</h1>
+            <h2 class="textHeader"></h2>
+        </div>
+        <div class="contact-form">
+            <form autocomplete="off" action="mailto:zhengzhangliew@gmail.com" method="post" enctype="text/plain">
+
+            <form id="contact-form" method="post" action="">
+                <input name="name" type="text" class="form-control" placeholder="Your Name" name="Lucky draw participant name" required><br>
+
+                <input namme="Email" type="email" class="form-control" placeholder="Your Email (We won't share it with anyone :))" name="participant email" required><br>
+
+                <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+
+                <input type="submit" class="form-control submit" value="SEND DETAILS">
+
+            </form>
+            </form>
+        </div>
+    
+        </div>
+    </div>
+
     <div id="quizSection">
         <h1>Ready to take the quiz? Click the link!</h1>
-        <!--link to go to quiz tab to take quiz on programming-->
-    </div>
-    <div id="signInSection">
-        <h1>Sign In to record name!</h1>
+        <button class="quizLink"><a href="index2.html" target="_blank" style="color: darkblue; text-decoration: none;">Go To Quiz</a></button>
         <!--use API database to add name of student-->
     </div>
     <div class="imglayer">  <!--adding motel image to background-->

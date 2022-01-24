@@ -1,6 +1,8 @@
 /*import fonts from googleapis*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Mochiy+Pop+P+One&display=swap');
 
 html, body{
     scroll-behavior: smooth;
@@ -130,10 +132,19 @@ html, body{
   }
 
 #homeSection{
-    height: 700px;
+    padding-bottom: 10%;
     font-size: calc(7px + 2vmin);
     color:white;
+    background-image: url("../assets/programming\ evolution.jpg");
+    background-blend-mode: screen;
+    border-width: 0;
+    border:0;
+    background-size: cover;
+    margin: auto;
+    margin-top: 4rem;
     text-align: center;
+    background-repeat: no-repeat;
+    height: 95vh;
 }
 
 #coursesSection{
@@ -158,19 +169,119 @@ html, body{
 }
 
 h1{
-    font-size: 4rem;
-    margin: 100px;
+    font-size: 3.2rem;
+    margin: 60px;
     text-align: center;
     padding:0;
-    
+    font-family: 'Mochiy Pop P One', sans-serif;
 }
 
-#homeSection p{
-    font-size: larger;
+#homeSection h2{
+    color: yellow;
+    font-size: 40px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+}
+
+p.paragraphAboutJob{
+    font-size: 26px;
     text-align: center;
-    color: lightblue;
-    margin: 100px;
+    color: white;
+    margin: 30px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     word-spacing: 5px;
+    display: flex;
+    line-height: 1.8em;
+}
+
+button.jobButton{
+    text-align: center;
+    border: none;
+    padding: .2rem 4rem;
+    border-radius: 3rem;
+    margin-right: 2rem;
+    background: #ee5;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+}
+
+#homeSection p.paragraph{
+    font-size: 26px;
+    text-align: center;
+    color: white;
+    margin: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    word-spacing: 5px;
+    display: flex;
+    line-height: 1.8em;
+}
+
+button.quizLink{
+    font-size: larger;
+    background: black;
+    border: none;
+    padding: 0 100px;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    height: 60px;
+    background: lightblue;
+    font-family: 'Oswald', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+.contact-title{
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 100px;
+    color: blueviolet;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+.contact-title h1{
+    font-size: 32px;
+    line-height: 10px;
+}
+.contact-title h2{
+    font-size: 16px;
+}
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+.form-control{
+    width: 600px;
+    background:transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color:#fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+input{
+    height:45px;
+}
+form .submit{
+    background: lightblue;
+    border-color: transparent;
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+h2.textHeader
+{
+    font-family: 'Prompt', sans-serif;
+    color: white;
 }

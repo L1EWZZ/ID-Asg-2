@@ -36,3 +36,5 @@ function Selector(element)
 {
     return document.querySelector(element);
 }
+
+
