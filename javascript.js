@@ -148,23 +148,34 @@ function showResultBox(){
     result_box.classList.add("activeResult");
     const scoreText = result_box.querySelector(".score_text");
     if(userScore == 5){
-        let scoreTag = '<span> and congratulations!, You got <p>'+ userScore + '</p> out of <p>'+ questions.length+'</p></span>';
+        let scoreTag = '<span>Awesome! You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
-        //new_btn.appendChild(form_page);
-        //document.body.appendChild(new_btn);
-        
+        document.getElementById("luckyDrawButton").style.display = "block";
     }
-    else if(userScore > 3){
-        let scoreTag = '<span>and congrats!, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+     else if(userScore == 4){
+        let scoreTag = '<span>Congrats! You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
+        document.getElementById("luckyDrawButton").style.display = "none";
     }
-    else if(userScore > 1){
-        let scoreTag = '<span>and nice!, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+    else if(userScore == 3){
+        let scoreTag = '<span>Wow! You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
+        document.getElementById("luckyDrawButton").style.display = "none";
+    }
+    else if(userScore == 2){
+        let scoreTag = '<span>Oops, you got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+        document.getElementById("luckyDrawButton").style.display = "none";
+    }
+    else if(userScore == 1){
+        let scoreTag = '<span>Oops, you got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+        document.getElementById("luckyDrawButton").style.display = "none";
     }
     else{
-        let scoreTag = '<span>and sorry, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span>Sorry You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
+        document.getElementById("luckyDrawButton").style.display = "none";
     }
 }
 

@@ -7,7 +7,13 @@
 }
 
 body{
-    background: #007bff;
+    background: url('assets/picture-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    max-width: max-content;
+    max-height: max-content;
+    object-fit: cover;
 }
 
 .start_button,
@@ -362,10 +368,11 @@ footer .next_btn:hover{
     padding: 0 20px;
     border: none;
     outline: none;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     border-radius: 5px;
     border: 1px solid #007bff;
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
