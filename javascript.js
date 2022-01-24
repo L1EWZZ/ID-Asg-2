@@ -6,7 +6,8 @@ const quiz_box = document.querySelector(".quiz_box");
 const timeCount = quiz_box.querySelector(".timer .Timer_sec")
 const timeLine = quiz_box.querySelector("header .time_line");
 const timeOff = quiz_box.querySelector(".timer .Timer_text")
-
+var new_btn = document.createElement("BUTTON");
+var form_page = document.createTextNode("Click Me");
 const option_list = document.querySelector(".option_list");
 
 start_btn.onclick = ()=>{
@@ -138,7 +139,14 @@ function showResultBox(){
     info_box.classList.remove("activeQuiz");
     result_box.classList.add("activeResult");
     const scoreText = result_box.querySelector(".score_text");
-    if(userScore > 3){
+    if(userScore == 5){
+        let scoreTag = '<span> and congratulations!, You got <p>'+ userScore + '</p> out of <p>'+ questions.length+'</p></span>';
+        scoreText.innerHTML = scoreTag;
+        //new_btn.appendChild(form_page);
+        //document.body.appendChild(new_btn);
+        
+    }
+    else if(userScore > 3){
         let scoreTag = '<span>and congrats!, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
