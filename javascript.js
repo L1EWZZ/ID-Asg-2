@@ -47,20 +47,21 @@ quit_quiz.onclick = ()=>{
 
 //restart the quiz, reset everything when cliked on "Replay Quiz"
 restart_quiz.onclick = ()=>{
-    quiz_box.classList.add("activeQuiz");
-    result_box.classList.remove("activeResult");
-    let que_count = 0;
-    let que_num = 1;
-    let timeValue = 15;
-    let widthValue = 0;
-    let userScore = 0;
-    showQuestions(que_count);
-    queCounter(que_num);
-    clearInterval(counter);
-    startTimer(timeValue);
-    clearInterval(counterLine);
-    startTimerLine(widthValue);
-    next_btn.style.display = "none";
+    quiz_box.classList.add("activeQuiz"); 
+    result_box.classList.remove("activeResult"); 
+    que_count = 0;
+    que_num = 1;
+    timeValue = 15;
+    widthValue = 0;
+    userScore = 0;
+    showQuestions(que_count); 
+    queCounter(que_num); 
+    clearInterval(counter); 
+    clearInterval(counterLine); 
+    startTimer(timeValue); 
+    startTimerLine(widthValue); 
+    timeText.textContent = "Time Left";
+    next_btn.classList.remove("show"); 
 }
 
 //finished the question and user clicks on "next" button to proceed to next question
