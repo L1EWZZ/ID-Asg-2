@@ -1,0 +1,5 @@
+.container{  /*setting width, height, colors of whole image container*/
+    background-color: lightblue;
+    border-radius: 25px;
+    padding: 20px;
+}
