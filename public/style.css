@@ -148,11 +148,28 @@ html, body{
     height: 95vh;
 }
 
-#coursesSection{
-    height: 700px;
-    font-size: calc(7px + 2vmin);
-    color:white;
+.coursesSection{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
     text-align: center;
+}
+.coursesSection h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.coursesSection p{
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.courseRow{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #quizSection{
