@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
 
 html, body{
     scroll-behavior: smooth;
@@ -150,15 +151,20 @@ html, body{
     height: 95vh;
 }
 
-
+h3.courseHeader{
+    color: darkblue;
+    font-size: 19px;
+    font-family: 'Supermercado One', cursive;
+}
 
 #coursesSection{
     width: 80%;
-    height: 750px;
+    height: 800px;
     margin: auto;
     padding-top: 100px;
     text-align: center;
 }
+
 #coursesSection h1{
     font-weight: 800;
     color: white;
