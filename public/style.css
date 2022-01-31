@@ -158,16 +158,18 @@ html, body{
     text-align: center;
 }
 #coursesSection h1{
-    font-size: 40px;
     font-weight: 600;
     color: white;
+    font-size: 600;
 }
-.coursesSection p{
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
+#coursesSection h2{
+    color: lightblue;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 500;
+    font-weight: 500;
     line-height: 22px;
     padding: 10px;
+    
 }
 
 .courseRow{
