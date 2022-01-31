@@ -148,15 +148,21 @@ html, body{
     height: 95vh;
 }
 
-.coursesSection{
+#homeSection .clickToFindOutHeader{
+    color: white;
+}
+
+#coursesSection{
     width: 80%;
+    height: 750px;
     margin: auto;
     padding-top: 100px;
     text-align: center;
 }
-.coursesSection h1{
-    font-size: 36px;
+#coursesSection h1{
+    font-size: 40px;
     font-weight: 600;
+    color: white;
 }
 .coursesSection p{
     color: #777;
