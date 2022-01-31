@@ -173,7 +173,7 @@ html, body{
 }
 
 #quizSection{
-    height: 700px;
+    height: 760px;
     font-size: calc(7px + 2vmin);
     color:white;
     text-align: center;
@@ -187,7 +187,7 @@ html, body{
 }
 
 #signInSection{
-    height: 700px;
+    height: 760px;
     font-size: calc(7px + 2vmin);
     color:white;
     text-align: center;
