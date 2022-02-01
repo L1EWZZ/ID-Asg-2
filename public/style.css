@@ -136,7 +136,7 @@ html, body{
   }
 
 #homeSection{
-    padding-bottom: 10%;
+    padding-top: 100px;
     font-size: calc(7px + 2vmin);
     color:white;
     background-image: url("../assets/programming\ evolution.jpg");
@@ -145,10 +145,10 @@ html, body{
     border:0;
     background-size: cover;
     margin: auto;
-    margin-top: 4rem;
+    margin-top: 10rem;
     text-align: center;
     background-repeat: no-repeat;
-    height: 95vh;
+    height: 850px;
 }
 
 h3.courseHeader{
@@ -159,7 +159,7 @@ h3.courseHeader{
 
 #coursesSection{
     width: 80%;
-    height: 800px;
+    height: 850px;
     margin: auto;
     padding-top: 100px;
     text-align: center;
@@ -224,6 +224,7 @@ h3.courseHeader{
     font-size: calc(7px + 2vmin);
     color:white;
     text-align: center;
+    padding-top: 100px;
 }
 
 #quizSection h2{
@@ -275,7 +276,7 @@ button.jobButton{
     margin-right: 2rem;
     background: #ee5;
     font-family: 'Oswald', sans-serif;
-    font-size: large;
+    font-size: x-large;
 }
 
 #homeSection p.paragraph{
