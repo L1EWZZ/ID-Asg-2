@@ -79,9 +79,9 @@ $(document).ready(function () {
         for (var i = 0; i < response.length && i < limit; i++) {
           content = `${content}<tr id='${response[i]._id}'>
           <td>${response[i].studentname}</td>
-          <td>${response[i].studentemail}</td>
-          <td>${response[i].studentid}</td>
           <td>${response[i].studentlastname}</td>
+          <td>${response[i].studentid}</td>
+          <td>${response[i].studentemail}</td>
           <td>${response[i].studentage}</td>
           <td>${response[i].parentemail}</td>
 
@@ -92,11 +92,11 @@ $(document).ready(function () {
           <td><a href='#update-contact-container' class='update' data-id='${response[i]._id}'
           data-id='${response[i]._id}' 
           data-name='${response[i].studentname}' 
-          data-email='${response[i].studentemail}'
+          data-lastname='${response[i].studentlastname}'
           data-student-id='${response[i].studentid}'
-          data-mentor='${response[i].studentlastname}'
-          data-class='${response[i].studentage}'
-          data-mentoremail='${response[i].parentemail}'
+          data-studentemail='${response[i].studentemail}'
+          data-age='${response[i].studentage}'
+          data-parentemail='${response[i].parentemail}'
           >Update</a></td></tr>`;
         }
   
