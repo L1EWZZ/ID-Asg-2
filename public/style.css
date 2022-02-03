@@ -136,7 +136,7 @@ html, body{
   }
 
 #homeSection{
-    padding-top: 100px;
+    padding-top: 10px;
     font-size: calc(7px + 2vmin);
     color:white;
     background-image: url("../assets/programming\ evolution.jpg");

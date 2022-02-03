@@ -13,18 +13,18 @@ $(document).ready(function () {
   
       let studentName = $("#student-name").val();
       let studentID = $("#student-id").val();
-      let studentMentor = $("#student-mentor").val();
-      let studentClass = $("#student-class").val();
+      let studentLastName = $("#student-lastname").val();
+      let studentAge = $("#student-age").val();
       let studentEmail = $("#student-email").val();
-      let mentorEmail = $("#mentor-email").val();
+      let parentEmail = $("#parent-email").val();
   
       let jsondata = {
         "studentname": studentName,
         "studentid": studentID,
-        "studentmentor": studentMentor, 
-        "studentclass": studentClass,
+        "studentlastname": studentLastName, 
+        "studentage": studentAge,
         "studentemail": studentEmail,
-        "mentoremail": mentorEmail
+        "parentemail": parentEmail
       };
   
       let settings = {
@@ -81,9 +81,9 @@ $(document).ready(function () {
           <td>${response[i].studentname}</td>
           <td>${response[i].studentemail}</td>
           <td>${response[i].studentid}</td>
-          <td>${response[i].studentmentor}</td>
-          <td>${response[i].studentclass}</td>
-          <td>${response[i].mentoremail}</td>
+          <td>${response[i].studentlastname}</td>
+          <td>${response[i].studentage}</td>
+          <td>${response[i].parentemail}</td>
 
           <td><a href='#' class='delete' data-id='${response[i]._id}'
           
@@ -94,9 +94,9 @@ $(document).ready(function () {
           data-name='${response[i].studentname}' 
           data-email='${response[i].studentemail}'
           data-student-id='${response[i].studentid}'
-          data-mentor='${response[i].studentmentor}'
-          data-class='${response[i].studentclass}'
-          data-mentoremail='${response[i].mentoremail}'
+          data-mentor='${response[i].studentlastname}'
+          data-class='${response[i].studentage}'
+          data-mentoremail='${response[i].parentemail}'
           >Update</a></td></tr>`;
         }
   
@@ -113,17 +113,17 @@ $(document).ready(function () {
       let studentName = $(this).data("name");
       let studentEmail = $(this).data("email");
       let studentID = $(this).data("student-id");
-      let studentMentor = $(this).data("mentor");
-      let studentClass = $(this).data("class");
-      let mentorEmail = $(this).data("mentoremail");
+      let studentLastName = $(this).data("mentor");
+      let studentAge = $(this).data("class");
+      let parentEmail = $(this).data("mentoremail");
       let studentObject = $(this).data("id");
   
       $("#update-contact-name").val(studentName);
       $("#update-contact-email").val(studentEmail);
       $("#update-contact-ID").val(studentID);
-      $("#update-contact-mentor").val(studentMentor);
-      $("#update-contact-class").val(studentClass);
-      $("#update-contact-mentorMail").val(mentorEmail);
+      $("#update-contact-lastname").val(studentLastName);
+      $("#update-contact-age").val(studentAge);
+      $("#update-contact-parentMail").val(parentEmail);
       $("#update-contact-object").val(studentObject);
       $("#update-contact-container").show();
   
@@ -134,28 +134,27 @@ $(document).ready(function () {
       let studentName = $("#update-contact-name").val();
       let studentEmail = $("#update-contact-email").val();
       let studentID = $("#update-contact-ID").val();
-      let studentMentor = $("#update-contact-mentor").val();
-      let studentClass = $("#update-contact-class").val();
-      let mentorEmail = $("#update-contact-mentorMail").val();
+      let studentLastName = $("#update-contact-lastname").val();
+      let studentAge = $("#update-contact-age").val();
+      let parentEmail = $("#update-contact-parentMail").val();
       let studentObject = $("#update-contact-object").val();
   
       console.log($("#update-contact-name").val());
-      console.log(studentName);
 
-      updateForm(studentObject ,studentName, studentEmail, studentMentor, studentClass, studentID, mentorEmail);
+      updateForm(studentObject ,studentName, studentEmail, studentLastName, studentAge, studentID, parentEmail);
     });//end updatecontactform listener
   
     //UPDATE Based on the ID chosen
-    function updateForm(id, studName, studMail, stuMentor, stuClass, stuID, mentorEmail) {
+    function updateForm(id, studName, studMail, stuLastName, stuAge, stuID, parEmail) {
 
       var jsondata = {
       "studentobject": id,
       "studentname": studName, 
       "studentemail": studMail, 
-      "studentmentor": stuMentor,  
-      "studentclass": stuClass,  
+      "studentlastname": stuLastName,  
+      "studentage": stuAge,  
       "studentid": stuID, 
-      "mentoremail": mentorEmail};
+      "parentemail": parEmail};
       var settings = {
         "async": true,
         "crossDomain": true,
