@@ -37,4 +37,9 @@ function Selector(element)
     return document.querySelector(element);
 }
 
+function openUrlInNewTab(url) {
+    alert(url);
+    window.open(url, "_blank");
+}
+
 
