@@ -39,7 +39,6 @@ function Selector(element)
 
 //function for divisions to be clickable and link to different html page
 function openUrlInNewTab(htmlpage) {
-    alert(htmlpage);
     window.open(htmlpage, "_blank");
 }
 
