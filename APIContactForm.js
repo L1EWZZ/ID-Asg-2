@@ -6,6 +6,12 @@ $(document).ready(function () {
     $("#add-update-msg").hide();
     $("#delete-contact-container").hide();
     $("#delete-student-msg").hide();
+    $("#animation").show();
+
+    setTimeout(function () {
+      $("#animation").hide();
+      getContacts();
+    }, 3000);
     
   
     $("#contact-submit").on("click", function (e) {
@@ -211,4 +217,6 @@ $(document).ready(function () {
       }
     }
   ,)
+
+  
   
