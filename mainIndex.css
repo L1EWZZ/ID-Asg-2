@@ -7,6 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 
 html, body{
     scroll-behavior: smooth;
@@ -23,7 +25,7 @@ html, body{
 
 .container{  /*setting width, height, colors of whole image container*/
     background: #282c34;
-    background: url('../assets/Night_3.png');
+    background: url('./assets/Night_3.png');
     background-size: cover;
     background-repeat: no-repeat;
     width:92vw;
@@ -136,10 +138,10 @@ html, body{
   }
 
 #homeSection{
-    padding-top: 10px;
+    padding-top: 5px;
     font-size: calc(7px + 2vmin);
     color:white;
-    background-image: url("../assets/programming\ evolution.jpg");
+    background-image: url("./assets/programming\ evolution.jpg");
     background-blend-mode: screen;
     border-width: 0;
     border:0;
@@ -303,8 +305,7 @@ button.quizLink{
     font-family: 'Oswald', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
 
 body{
     margin: 0;

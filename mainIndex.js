@@ -41,5 +41,3 @@ function Selector(element)
 function openUrlInNewTab(htmlpage) {
     window.open(htmlpage, "_blank");
 }
-
-
