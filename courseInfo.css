@@ -9,7 +9,7 @@ body{
 .img{
     width: 100%;
     height: 100vh;
-    background-image: url('./ID-Asg-2/assets/database.jpg');
+    background-image: url('../ID-Asg-2/assets/database.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
