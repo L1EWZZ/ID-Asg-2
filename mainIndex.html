@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome To Porgramming</title>
-    <link rel="stylesheet" href="./public/style.css">
+    <title>Welcome To ICT</title>
+    <link rel="stylesheet" href="mainIndex.css">
 </head>
 <body>
     <div class="container">
@@ -50,8 +50,8 @@
     
     <!--sections of text under landing page-->
     <div id="homeSection">
-        <h1>About Programming</h1>
-        <h2>Why Programming?</h2>
+        <h1>About InfoComm Technology</h1>
+        <h2>Why is Programming important in this course?</h2>
         <p class="paragraph">Computer programming is important today because so much of our world is automated. 
             Humans need to be able to control the interaction between people and machines. 
             Since computers and machines are able to do things so efficiently and accurately, 
@@ -67,28 +67,28 @@
     <section id="coursesSection">
         <h1>Courses of the ICT sector</h1>
         <h2>Interested to find out more about one of the courses?</h2> 
-        <h2>Click on the name to find out more!</h2>
+        <h2>Click on the either course to find out more!</h2>
             <div class="courseRow">
                 <div class="courseColumn" onclick="openUrlInNewTab('informationtechnology.html');">
-                    <h3>Information Technology</h3>
+                    <h3 class="headerForEachCourse">Information Technology</h3>
                     <p>Develop innovative IT solutions that increase business competitiveness and enhance quality of life, 
                         or even start your very own e-business with a Diploma in Information Technology (IT). Our broad-based curriculum, coupled with a strong foundation in IT fundamentals, 
                         will give you a head start in pursuing further studies or launching your career in the IT sector.</p>
                 </div>
                 <div class="courseColumn" onclick="openUrlInNewTab('cybersecurity.html');">
-                    <h3>Cyber Security and Digital Forensics</h3>
+                    <h3 class="headerForEachCourse">Cyber Security and Digital Forensics</h3>
                     <p>In today’s digital world, cybersecurity is crucial to protect organisations from cyber attacks. 
                         Join the fight against cybercrime with our Diploma in Cybersecurity & Digital Forensics (CSF). By building a strong foundation in basic IT through modules such as programming and </p>
                 </div>
                 <div class="courseColumn" onclick="openUrlInNewTab('immersivemedia.html');">
-                    <h3>Immersive Media</h3>
+                    <h3 class="headerForEachCourse">Immersive Media</h3><br>
                     <p>Augmented, virtual and mixed realities (AR/VR/MR); these are just some technologies that enable the creation of 
                         engaging content to transport users to other worlds beyond the confines of their flat screens.
                         This course educates on developing amazing games via (AR/VR/MR) and learning about
                         User Experience and User Interface(UX/UI). </p>
                 </div>
                 <div class="courseColumn" onclick="openUrlInNewTab('datascience.html');"><!--Put your file name-->
-                    <h3>Data Science</h3>
+                    <h3 class="headerForEachCourse">Data Science</h3><br>
                     <p>Every minute worldwide data is being created and manipulated.This are invaluable to certain organisations
                         such as businesses aid them in understanding customer queries, personalise their service and improve
                         and advance in their fundamental and crucial factors. In Diploma in Data Science, 
@@ -99,7 +99,7 @@
     </section>
 
     <div id="quizSection">
-        <h1>Ready to take the quiz? Click the button!</h1>
+        <h1>Ready to test your ICT knowledge? Click the button!</h1>
         <h2>Obtain full marks to participate in a lucky draw!</h2><br>
         <button class="quizLink"><a href="Quiz.html" target="_blank" style="color: darkblue; text-decoration: none;">Go To Quiz</a></button>
         <!--use API database to add name of student-->
@@ -135,6 +135,6 @@
     <div class="imglayer">  <!--adding motel image to background-->
         <img src="./assets/Night_4.png" alt="shop" id="shops">
     </div>
-    <script src="./public/main.js"></script>
+    <script src="mainIndex.js"></script>
 </body>
 </html>
