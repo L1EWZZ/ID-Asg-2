@@ -42,4 +42,19 @@ function openUrlInNewTab(htmlpage) {
     window.open(htmlpage, "_blank");
 }
 
+//Function to expand hidden text
+$(document).ready(function(){
+  $(".read").click(function(){
+      $(this).prev().toggle();
+      $(this).siblings('.dots').
+          toggle();
+      if($(this).text()== 'Read more'){
+          $(this).text('read less');
+      }
+      else
+      {
+          $(this).text('read more');
+      }
+  });
+});
 
