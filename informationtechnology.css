@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+
 body {
-  background-color: #0f2e51;
+  background-color: #de74ec96;
   padding: 0;
   margin: 0;
 }
@@ -7,15 +10,61 @@ body {
 section{
   padding: 20px;
 }
+.img-it{
+  width: 1550px;
+  height: 775px;
+  background-image: url(../assets/InfoTech.jpg);
+  background-size: 100%;
+}
 
 h1{
   margin: 0 0 15px 0;
-  color: white;
+  color: #6967d6;
   font-size: 28px;
   font-weight: 700;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Montserrat Subrayada', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  position: absolute;
+  left: 320px;
+  top: 775px;
+}
+.title_info p{
+  color: #ffff;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+  font-family: 'Convergence', sans-serif;
+}
+h2{
+  margin: 0 0 15px 0;
+  color: #6967d6;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 535px;
+  top: 945px;
+}
+.elective_info p{
+  color: #ffff;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: top;
+  font-family: 'Convergence', sans-serif;
+  position: relative;
+  top: 15px;
+}
+h3{
+  margin: 0 10px 15px 0;
+  color: #6967d6;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
 }
 .more{
   display: none;
@@ -25,7 +74,7 @@ h1{
   font-size: 18px;
   line-height: 25px;
   text-align: justify;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Convergence', sans-serif;
 }
 .post:not(:last-child)
 {
@@ -34,12 +83,19 @@ h1{
 button{
   margin-top: 15px;
   display: block;
-  background-color: #e41d3f;
-  color: white;
-  border: none;
+  background-color: #de74ec96;
+  color: #e41d3f;
+  border: 5px solid #de74ec96;
   outline: none;
   padding: 8px 20px;
   text-transform: capitalize;
   cursor: pointer;
   font-size: 20px;
+  transition: 1.5s;
+}
+
+button:hover
+{
+  box-shadow: 0 5px 50px 0 #e41d3f inset, 0 5px 50px 0 #e41d3f,
+  0 5px 50px 0 #e41d3f inset, 0 5px 50px 0 #e41d3f; 
 }
