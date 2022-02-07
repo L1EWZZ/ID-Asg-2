@@ -10,6 +10,7 @@
 
 </head>
 <body>
+    <img class="img-it" src="C:\Users\magma\Documents\NP\Y1Sem2\ID\ID-Asg-2\assets\InfoTech.jpg" alt="NP IT img">
     <section>
         <div class="title_info">
             <h1>What we will learn about Information Technology?</h1>
@@ -38,7 +39,7 @@
             </p>
         </div>
         <div class="post">
-            <h1>Data Science & Analytics</h1>
+            <h3>Data Science & Analytics</h3>
             <span class="dot">...</span>
             <span class="more">
                 Acquire knowledge and skills in business intelligence, 
@@ -48,7 +49,7 @@
             <button class="read">Read more</button>
         </div>
         <div class="post">
-            <h1>Cloud Computing</h1>
+            <h3>Cloud Computing</h3>
             <span class="dot">...</span>
             <span class="more">
                 Learn about cloud architecture and technologies,
@@ -58,7 +59,7 @@
             <button class="read">Read more</button>
         </div>
         <div class="post">
-            <h1>Enterprise Solutioning & Marketing</h1>
+            <h3>Enterprise Solutioning & Marketing</h3>
             <span class="dot">...</span>
             <span class="more">
                 Develop business strategies and offerings for the 
@@ -68,7 +69,7 @@
             <button class="read">Read more</button>
         </div>
         <div class="post">
-            <h1>Games Programming</h1>
+            <h3>Games Programming</h3>
             <span class="dot">...</span>
             <span class="more">
                 Create computer games by applying knowledge and skills 
@@ -77,7 +78,7 @@
             <button class="read">Read more</button>
         </div>
         <div class="post">
-            <h1>Solutions Architect</h1>
+            <h3>Solutions Architect</h3>
             <span class="dot">...</span>
             <span class="more">
                 Design and implement computer solutions using algorithms and 
@@ -90,19 +91,17 @@
     
 <script>
         $(document).ready(function(){
-        $(".read").click(function(){
-            $(this).prev().toggle();
-            $(this).siblings('.dots').
-                toggle();
-            if($(this).text()== 'Read more'){
-                $(this).text('read less');
-            }
-            else
-            {
-                $(this).text('read more');
-            }
+            $(".read").click(function(){
+                $(this).prev().toggle();
+                $(this).siblings('.dots').toggle();
+                if($(this).text()=='Read more'){
+                    $(this).text('Read less');
+                }
+                else{
+                    $(this).text('Read more');
+                }
+            })
         });
-    });
 </script>
 </body>
     
