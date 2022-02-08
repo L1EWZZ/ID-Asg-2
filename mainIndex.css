@@ -355,6 +355,14 @@ form .submit{
     margin-top: 20px;
     border-radius: 8px;
 }
+
+/*when button is clicked (active), change to violet color, shadow of button will be green*/
+form .submit:active {
+    background-color: violet;
+    box-shadow: 0 5px green;
+    transform: translateY(4px);
+  }
+
 h2.textHeader
 {
     font-family: 'Prompt', sans-serif;
