@@ -13,7 +13,7 @@ section{
 .img-it{
   width: 1550px;
   height: 775px;
-  background-image: url(../assets/InfoTech.jpg);
+  background-image: url(./assets/InfoTech.jpg);
   background-size: 100%;
 }
 

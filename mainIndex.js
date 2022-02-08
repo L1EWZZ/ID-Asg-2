@@ -23,9 +23,9 @@
         //method if event(checkbox is checked) happens, change the image of hotels and lights
         checkbox.onchange = (event) => {
             if (event.target.checked) {
-                img.src = "../assets/Night_5.png";
+                img.src = "./assets/Night_5.png"
             } else {
-                img.src = "../assets/Night_4.png";
+                img.src = "./assets/Night_4.png";
             }
         }
 })();
@@ -42,5 +42,14 @@ function openUrlInNewTab(htmlpage) {
     window.open(htmlpage, "_blank");
 }
 
+//function to bring user to top of webpage
+const toTop = document.querySelector(".to-top");
 
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {  //if the page has been scrolled to 100 pixels from the top, then
+    toTop.classList.add("active");  //add the active class
+  } else {
+    toTop.classList.remove("active");  //else remove the active class since didnt scroll
+  }
+})
 

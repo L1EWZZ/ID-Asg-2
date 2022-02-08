@@ -37,7 +37,7 @@ body{
 
 .heading{
     position: absolute;
-    top:20px;
+    top:0px;
     left:70px;
     font-size: 40px;
     font-family: 'Roboto Mono', monospace;
@@ -46,12 +46,13 @@ body{
 .paragraph{
     margin-left: 70px;
     margin-right: 20px;
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'Supermercado One', cursive;
 }
 
 div.wrapping{
     background-color: pink;
+    
 }
 
 
