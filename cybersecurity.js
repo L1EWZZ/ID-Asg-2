@@ -5,6 +5,7 @@ const context = canvas.getContext('2d');  //get access to its rendering context 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+//letters and numbers that will be displayed in the matrix background
 const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
 const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const nums = '0123456789';
@@ -44,4 +45,5 @@ const draw = () => {
 	}
 };
 
+//display the matrix every 35s
 setInterval(draw, 35);
