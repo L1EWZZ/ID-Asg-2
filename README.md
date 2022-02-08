@@ -5,4 +5,5 @@ Webpage will allow students to view the usefulness of programming which is the c
 Courses covered in our webpage would include data science, immersive media, cyber security forensic and information technology. 
 Landing page will be the main page where viewers can navigate their way through different sectors of the IT sector. 
 A quiz section will be part of the interaction with the viewers and obtaining full score in the quiz would give them a chance to enter the "lucky draw" which makes use of restdb. 
-LOTTIE animation has been used as a loading interaction in the API contact form between the computer and the user.
+LOTTIE animation has been used as a loading interaction in the API contact form between the computer and the user, and has beend used in below quiz button to make it look more interesting.
+A new concept called Canvas has been used for cybersecurity webpage in order to display the matrix background as matrix has a link to cyber security and attacks in the digital world. 
