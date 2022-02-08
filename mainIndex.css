@@ -281,6 +281,8 @@ button.jobButton{
     font-size: x-large;
 }
 
+
+
 #homeSection p.paragraph{
     font-size: 26px;
     text-align: center;
@@ -301,11 +303,15 @@ button.quizLink{
     border-radius: 1rem;
     margin-right: 2rem;
     height: 60px;
-    background: yellow;
+    background-color: yellow;
     font-family: 'Oswald', sans-serif;
 }
 
-
+.quizLink :active {
+    background-color: lightblue;
+    padding: 0 100px;
+    transform: translateY(4px);
+  }
 
 body{
     margin: 0;
