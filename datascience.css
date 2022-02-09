@@ -37,22 +37,22 @@ body{
 
 .heading{
     position: absolute;
-    top:0px;
+    top:50px;
     left:70px;
-    font-size: 40px;
+    font-size: 45px;
     font-family: 'Roboto Mono', monospace;
+    color: white;
 }
 
 .paragraph{
     margin-left: 70px;
     margin-right: 20px;
-    font-size: 23px;
+    font-size: 25px;
     font-family: 'Supermercado One', cursive;
 }
 
 div.wrapping{
     background-color: pink;
-    
 }
 
 
