@@ -14,7 +14,7 @@ section{
   width: 1550px;
   height: 775px;
   background-image: url(./assets/InfoTech.jpg);
-  background-size: 100%;
+  background-size: 80%;
 }
 
 h1{
@@ -26,12 +26,13 @@ h1{
   text-transform: uppercase;
   letter-spacing: 1.2px;
   position: absolute;
-  left: 320px;
+  left: 600px;
   top: 775px;
+  text-align: center;
 }
 .title_info p{
   color: #ffff;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 25px;
   text-align: justify;
   font-family: 'Convergence', sans-serif;
@@ -45,12 +46,13 @@ h2{
   text-transform: uppercase;
   letter-spacing: 1px;
   position: absolute;
-  left: 535px;
+  left: 600px;
   top: 945px;
+  font-weight: 900;
 }
 .elective_info p{
   color: #ffff;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 25px;
   text-align: top;
   font-family: 'Convergence', sans-serif;
