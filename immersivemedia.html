@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Immersive Media</title>
+        <link rel="stylesheet" type="text/css" href="immersivemedia.css">
+    </head>
+    <body>
+        <section>
+            <h1>Immersive Media</h1>
+            <div class="banner">
+                <div class="tiles"></div>
+            </div>
+        </section>
+
+        <script>
+            const banner = document.getElementsByClassName('banner')[0];
+            const tiles = document.getElementsByClassName('tiles');
+            for(var i = 1; i < 400; i++)
+            {
+                banner.innerHTML += "<div class='tiles'></div>";
+                const duration = Math.random() * 5;
+                tiles[i].style.animationDuration = 2 + duration +'s';
+                tiles[i].style.animationDelay = duration +'s';
+            }
+
+            const section = document.querySelector('section');
+            setTimeout(function(){
+                section.classList.add('active')
+            },10000)
+        </script>
+    </body>
+</html>
