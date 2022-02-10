@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+*
+{
+    margin: 0;
+    font-family: 'Rowdies', cursive;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #1487f3;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+section h1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 10vw;
+    color: #ffff;
+    font-weight: 700;
+}
+
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner .tiles{
+    position: relative;
+    display: block;
+    width: 5vw;
+    height: 5vh;
+    animation: animate 4s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateZ(2000px);
+        background: url(./assets/immersivemedia.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        box-shadow: 0 5px rgba(0, 0, 0, 0.5);
+
+    }
+    100%
+    {
+        transform: translateZ(0px);
+        background: url(./assets/immersivemedia.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        border: 1px solid rgba(0, 0, 0, .1);
+        box-shadow: 0 5px rgba(0, 0, 0, 0);
+    }
+}
+
+.section .active .banner .tiles{
+    animation: animateStop 4s ease-in-out forwards;
+    background: url(./assets/immersivemedia.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 5px rgba(0, 0, 0, 0);
+}
+
+@keyframes animateStop
+{
+    0%
+    {
+        transform: translateZ(0px);
+        background: url(./assets/immersivemedia.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        box-shadow: 0 5px rgba(0, 0, 0, 0.5);
+
+    }
+    100%
+    {
+        transform: translateZ(2000px);
+        background: url(./assets/immersivemedia.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        border: 1px solid rgba(0, 0, 0, .1);
+        box-shadow: 0 5px rgba(0, 0, 0, 0);
+    }
+}
