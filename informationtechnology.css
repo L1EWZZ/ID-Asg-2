@@ -11,8 +11,8 @@ section{
   padding: 20px;
 }
 .img-it{
-  width: 1550px;
-  height: 775px;
+  width: 100%;
+  height: 100%;
   background-image: url(./assets/InfoTech.jpg);
   background-size: 80%;
 }
@@ -27,7 +27,7 @@ h1{
   letter-spacing: 1.2px;
   position: absolute;
   left: 600px;
-  top: 775px;
+  top: 715px;
   text-align: center;
 }
 .title_info p{
@@ -36,6 +36,7 @@ h1{
   line-height: 25px;
   text-align: justify;
   font-family: 'Convergence', sans-serif;
+  text-align: center;
 }
 h2{
   margin: 0 0 15px 0;
@@ -58,6 +59,7 @@ h2{
   font-family: 'Convergence', sans-serif;
   position: relative;
   top: 15px;
+  text-align: center;
 }
 h3{
   margin: 0 10px 15px 0;
