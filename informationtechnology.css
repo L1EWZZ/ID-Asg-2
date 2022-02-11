@@ -5,11 +5,11 @@ body {
   background-color: #de74ec96;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 section{
   padding: 20px;
-  position: absolute;
 }
 .img-it{
   width: 100%;
