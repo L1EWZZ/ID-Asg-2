@@ -416,7 +416,7 @@ button.sendMessageButton{
     padding: 0 10px;
     border-radius: 1rem;
     margin-right: 2rem;
-    height: 30px;
+    height: 40px;
     background-color: yellow;
     font-family: 'Oswald', sans-serif;
 }
@@ -428,7 +428,7 @@ button.resetButton{
     padding: 0 10px;
     border-radius: 1rem;
     margin-right: 2rem;
-    height: 30px;
+    height: 40px;
     background-color: yellow;
     font-family: 'Oswald', sans-serif;
 }
@@ -443,4 +443,28 @@ button.resetButton{
     background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.nameLabel{
+    position: relative; 
+    left: -15px; 
+    font-family: 'Akaya Telivigala', cursive; 
+    font-size: larger;
+}
+
+.emailLabel{
+    position: relative; 
+    top: -120px; 
+    left: -15px; 
+    top: 2px; 
+    font-family: 'Akaya Telivigala', cursive; 
+    font-size: larger;
+}
+
+.messageLabel{
+    position: relative; 
+    top: -126px; 
+    left: -53px; 
+    font-family: 'Akaya Telivigala', cursive; 
+    font-size: larger;
 }
