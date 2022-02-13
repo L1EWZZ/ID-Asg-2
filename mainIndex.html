@@ -103,7 +103,7 @@
     </section>
 
     <div id="quizSection">
-        <h1>Ready to test your ICT knowledge? Click the button!</h1>
+        <h1>Win a reward by completing the quiz below! CLick to find out more!</h1>
         <h2>Obtain full marks to participate in a lucky draw!</h2><br>
         <button class="quizLink"><a href="Quiz.html" target="_blank" style="color: darkblue; text-decoration: none;">Go To Quiz</a></button>
         <center>
@@ -111,39 +111,57 @@
 <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_rhnmhzwj.json"  background="transparent"  speed="1"  style="width: 380px; height: 380px;"  loop  autoplay></lottie-player>
 </center>
 </div>
-<br>
 
     <div id="signInSection">
-        <h1>Leave a feedback!</h1>
+        <form name="google-sheet">
+        <h2 style="color: white; font-size: 80px; font-family: 'Arvo', serif;"><br>Leave a feedback!</h2>
+        <h3 style="color: lightblue; font-size: 30px; font-family: 'Arvo', serif;">What do you think about this webpage?</h3>
 
-        <div class="contact-title">
-            <h1>Let us contact you!</h1>
-            <h2 class="textHeader"></h2>
+            <div style="font-family: 'Akaya Telivigala'; color: yellow;" id="form_alerts"></div>
+
+            <div class="form-group mb-3">
+                <label for="name" class="form-label" style="position: relative; left: -15px; font-family: 'Akaya Telivigala', cursive; font-size: larger;">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" autocomplete="off" style="font-family: 'Zen Kaku Gothic Antique', sans-serif;">
+            </div>
+            <div class="form-group mb-3">
+                <label for="email" class="form-label" style="position: relative; top: -120px; left: -15px; top: 2px; font-family: 'Akaya Telivigala', cursive; font-size: larger;">Email</label>
+                <input type="email" id="email" name="email" class="form-control" style="font-family: 'Zen Kaku Gothic Antique', sans-serif;" placeholder="Enter your email address" required autocomplete="off">
+            </div>
+            <div class="form-group mb-3">
+                <label for="message" class="form-label" style="position: relative; top: -126px; left: -53px; font-family: 'Akaya Telivigala', cursive; font-size: larger;">Feedback</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Leave a feedback!" rows="5" required style="margin-left: -40px; font-family: 'Zen Kaku Gothic Antique', sans-serif;" autocomplete="off"></textarea>
+            </div>
+            <div>
+                <button class="sendMessageButton" type="submit">Send Feedback!</button>
+                <button class="resetButton" type="reset">Reset the form</button>
+            </div>
+        </form>
+
         </div>
-        <div class="contact-form">
-            <form autocomplete="off" action="mailto:zhengzhangliew@gmail.com" method="post" enctype="text/plain">
-
-            <form id="contact-form" method="post" action="">
-                <input name="name" type="text" class="form-control" placeholder="Your Name" name="Lucky draw participant name" required><br>
-
-                <input namme="Email" type="email" class="form-control" placeholder="Your Email (We won't share it with anyone :))" name="participant email" required><br>
-
-                <textarea name="message" class="form-control" placeholder="Feedback" rows="4" required></textarea><br>
-
-                <input type="submit" class="form-control submit" value="SEND FEEDBACK">
-
-            </form>
-            </form>
-        </div>
-    
-        </div>
-    </div>
-
-    
     
     <div class="imglayer">  <!--adding motel image to background-->
         <img src="./assets/Night_4.png" alt="shop" id="shops">
     </div>
     <script src="mainIndex.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzFAc_Zwrz2dZpl0RtFh05O5gwZ16FvdCbw0Fo4WceBLf1gqFbSE2eJUNLKcpiKB5CIzg/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => $("#form_alerts").html("<div class='alert alert-success'>Contact message sent successfully.</div>"))
+            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
+
+            setTimeout(function () {
+      $("#form_alerts").hide();
+    }, 5000);
+        })
+
+      </script>
 </body>
 </html>
