@@ -311,10 +311,10 @@ button.quizLink{
     font-family: 'Oswald', sans-serif;
 }
 
-.quizLink :active {
-    background-color: lightblue;
-    padding: 0 100px;
-    transform: translateY(4px);
+.quizLink:active {
+    background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
   }
 
 body{
@@ -467,4 +467,10 @@ button.resetButton{
     left: -53px; 
     font-family: 'Akaya Telivigala', cursive; 
     font-size: larger;
+}
+
+.jobButton:active{
+    background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
