@@ -9,14 +9,14 @@
 
 body
 {
-    background: #1487f3;
+    background: #12b672;
 }
 
 section
 {
     position: relative;
-    width: 100%;
-    height: 100vh;
+    width: 110%;
+    height: 110%;
     transform-style: preserve-3d;
     perspective: 500px;
 }
@@ -47,7 +47,7 @@ section h1{
     position: relative;
     display: block;
     width: 5vw;
-    height: 5vh;
+    height: 6vh;
     animation: animate 4s ease-in-out forwards;
     animation-delay: 1s;
 }
