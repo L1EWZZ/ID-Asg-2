@@ -9,7 +9,8 @@
 
 body
 {
-    background: #12b672;
+    background: lightblue;
+    overflow-x: hidden;
 }
 
 section
