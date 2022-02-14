@@ -20,12 +20,12 @@
                         <label for="name" class="form-label">Name</label>
                         <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
                     </div>
-                    <div class="form-group mb-3">email
+                    <div class="form-group mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
                     </div>
                     <div class="form-group mb-3">
-                        <label for="message" class="form-label">Message</label>
+                        <label for="message" class="form-label">Feedback</label>
                         <textarea id="message" name="message" class="form-control" placeholder="Enter your message" rows="5" required></textarea>
                     </div>
                     <div>
@@ -50,6 +50,8 @@
             .then(response => $("#form_alerts").html("<div class='alert alert-success'>Contact message sent successfully.</div>"))
             .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
         })
+
+        
       </script>
 </body>
 </html>
