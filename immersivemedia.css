@@ -154,7 +154,7 @@ section h1{
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    color: #ffff;
+    color: rgb(250, 244, 244);
     padding: 10rem 3rem;
 }
 
