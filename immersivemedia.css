@@ -147,15 +147,15 @@ section h1{
     animation-delay: 20s;
 }
 
+/*box that contains info for each text*/
 .slideshow-item-text{
     max-width: 50%;
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0,.8);
     color: #ffff;
-    padding: 10rem 5rem;
+    padding: 10rem 3rem;
 }
 
 .slideshow-item-text h5{
