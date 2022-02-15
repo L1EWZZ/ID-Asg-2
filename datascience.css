@@ -59,3 +59,15 @@ div.video{
     margin-right: 50px;
     margin-left: 40px;
 }
+
+div.lottieAnimation{
+    position: relative;
+    bottom: 190px;
+    right: 160px;
+}
+h1.dataScienceHeader{
+    position: relative;
+    bottom: 280px;
+    right: 150px;
+    font-size: 85px;
+}
