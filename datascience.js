@@ -18,3 +18,11 @@ window.onload = function(){
     scrollEffect();
 }
 
+/*script for creating tiles in a loop */
+const banner = document.getElementsByClassName('banner')[0];
+const tiles = document.getElementsByClassName('tiles');
+
+for (var i = 1; i < 400; i++){
+    banner.innerHTML += "<div class='tiles'></div>";
+    tiles[i].style.animationDelay = `${i * 0.05}s`;
+}
