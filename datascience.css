@@ -1,19 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-body{
-    margin:0;
-    padding:0;
+
+
+*
+{
+    padding: 0;
+    margin: 0;
 }
 
-.img{
-    width: 100%;
-    height: 100vh;
-    background-image: url('../ID-Asg-2/assets/database.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+section
+{
     position: relative;
+    width: 103%;
+    height: 100vh;
+    background: #333;
+}
+
+
+.banner
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner .tiles
+{
+    position: relative;
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    animation: animate 0.75s ease-in-out forwards;
+}
+
+.banner .tiles:nth-child(even)/*animation duration for even tiles(even elements)*/
+{
+    animation: animate 1s ease-in-out forwards;
+}
+
+.banner .tiles:nth-child(5n+3)/*selects every 5th element starting from the third*/
+{
+    animation: animate 2.5s ease-in-out forwards;
+}
+
+.banner .tiles:nth-child(5n+7)/*selects every 5th element starting from the seventh*/
+{
+    animation: animate 1.5s ease-in-out forwards;
+}
+
+
+@keyframes animate/*is to animate the image tiles in a wave animation*/
+{
+    0%/*beginning offset of 0%*/
+    {
+        opacity: 0;
+        transform: scale(0) translateY(1000px);
+    }
+
+    50%/*middle offset of 50%*/
+    {
+        opacity: 1;
+        background: url('../ID-Asg-2/assets/database.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    100%/*ending offest of 100%*/
+    {
+        opacity: 1;
+        transform: scale(1) translateY(0px);
+        background: url('../ID-Asg-2/assets/database.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .img-text{
