@@ -7,6 +7,7 @@
 {
     padding: 0;
     margin: 0;
+    
 }
 
 section
@@ -54,15 +55,15 @@ section
 }
 
 
-@keyframes animate/*is to animate the image tiles in a wave animation*/
+@keyframes animate  /*is to animate the image tiles in a wave animation*/
 {
-    0%/*beginning offset of 0%*/
+    0%  /*beginning offset of 0%*/
     {
         opacity: 0;
         transform: scale(0) translateY(1000px);
     }
 
-    50%/*middle offset of 50%*/
+    50%  /*middle offset of 50%*/
     {
         opacity: 1;
         background: url('../ID-Asg-2/assets/database.jpg');
@@ -72,7 +73,7 @@ section
         background-size: cover;
     }
     
-    100%/*ending offest of 100%*/
+    100%  /*ending offest of 100%*/
     {
         opacity: 1;
         transform: scale(1) translateY(0px);
