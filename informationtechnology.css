@@ -120,7 +120,7 @@ button{
   position: relative;
   z-index: 100;
 }
-button:hover
+button:hover  /*once a curser is over the button, display this settings*/
 {
   transition-delay: 1.5s;
   color: rgb(17, 16, 16);
@@ -131,7 +131,7 @@ button:hover
   0 0 160px #e41d3f;
 }
 
-button::before
+button::before  /*before clicking the button, button css styling*/
 {
   content: '';
   position: absolute;
@@ -148,7 +148,7 @@ button::before
   transition-delay: 1s,0.5s,0s,0s;
 }
 
-button:hover::before
+button:hover::before  /*starting hover effect*/
 {
   width: 60%;
   height: 100%;
@@ -157,7 +157,7 @@ button:hover::before
   transition-delay: 0,0,0.5s,1s;
 }
 
-button::after
+button::after  /*what will be displayed after clikcing the button*/
 {
   content: '';
   position: absolute;
@@ -174,7 +174,7 @@ button::after
   transition-delay: 1s,0.5s,0s,0s;
 }
 
-button:hover::after
+button:hover::after  /*ending hover effect*/
 {
   width: 60%;
   height: 100%;

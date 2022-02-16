@@ -1,3 +1,4 @@
+//canvas element is used to draw graphics on the webpage for cybersecurity webpage via javascript
 const canvas = document.getElementById('Matrix');  //grab canvas element "Matrix"
 const context = canvas.getContext('2d');  //get access to its rendering context using getContext method
 
@@ -10,6 +11,7 @@ const katakana = 'アァカサタナハマヤャラワガザダバパイィキ�
 const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const nums = '0123456789';
 
+//joining them all together to be presentated in the matrix loading screen 
 const alphabet = katakana + latin + nums;
 
 const fontSize = 16;
