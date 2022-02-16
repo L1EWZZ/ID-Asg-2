@@ -1,4 +1,4 @@
-//testing
+//all questions that are tested in the quiz webpage 
 let questions = [
     {
         num: 1,

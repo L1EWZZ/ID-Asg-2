@@ -150,7 +150,7 @@ function showResultBox(){
     if(userScore == 5){
         let scoreTag = '<span>Awesome! You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
-        document.getElementById("luckyDrawButton").style.display = "block";
+        document.getElementById("luckyDrawButton").style.display = "block";  //if the suer scored 5, get the lucky draw button and make it display on screen for lucky draw participation
     }
      else if(userScore == 4){
         let scoreTag = '<span>Congrats! You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';

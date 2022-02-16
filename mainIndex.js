@@ -6,23 +6,23 @@
     const seconds = Selector('.seconds');
     const container = Selector('.container');
 
-    const checkbox = document.getElementById('switch');
+    const checkbox = document.getElementById('switch');  //get the switch element 
     const img = document.getElementById("shops");
 
     //set interval method
     setInterval(() => {
         const time = new Date();
 
-        //getting the current hours. if hours is less than 9, call the conditional statement, show hours with default 0
-        hours.textContent = time.getHours() < 9 ? `0${time.getHours()}`: time.getHours();  
-        minutes.textContent = time.getMinutes() < 9 ? `0${time.getMinutes()}`: time.getMinutes();  //return the current minutes
-        seconds.textContent = time.getSeconds() < 9 ? `0${time.getSeconds()}`: time.getSeconds();  //return the current seconds
+        //if time is not after 10, it will not be double digit, so have to set conditional statement, if less than 10, show the current hours, minutes, seconds together with default 0, thus be double digit time no matter what
+         hours.textContent = time.getHours() < 10 ? `0${time.getHours()}` : time.getHours();  
+        minutes.textContent = time.getMinutes() < 10 ? `0${time.getMinutes()}`: time.getMinutes();  //return the current minutes
+        seconds.textContent = time.getSeconds() < 10 ? `0${time.getSeconds()}`: time.getSeconds();  //return the current seconds
         }, 1000);
 
         //checkbox to turn off light
         //method if event(checkbox is checked) happens, change the image of hotels and lights
         checkbox.onchange = (event) => {
-            if (event.target.checked) {
+            if (event.target.checked) {  //if its checked, change the image source to thie image, creating off/on of light image 
                 img.src = "./assets/Night_5.png"
             } else {
                 img.src = "./assets/Night_4.png";
