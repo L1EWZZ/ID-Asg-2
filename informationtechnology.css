@@ -120,6 +120,8 @@ button{
   position: relative;
   z-index: 100;
 }
+
+
 button:hover  /*once a curser is over the button, display this settings*/
 {
   transition-delay: 1.5s;
@@ -169,7 +171,7 @@ button::after  /*what will be displayed after clikcing the button*/
   background: #e41d3f;
   box-shadow: -5px -8px 0 #e41d3f,
               -5px 8px 0 #e41d3f;
-  transition: width 0.5s, left 0.5s, height 0.5s;
+  transition: width 0.5s, right 0.5s, height 0.5s;
   box-shadow: 0.5s;
   transition-delay: 1s,0.5s,0s,0s;
 }
