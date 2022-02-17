@@ -10,14 +10,17 @@ var new_btn = document.createElement("BUTTON");
 var form_page = document.createTextNode("Click Me");
 const option_list = document.querySelector(".option_list");
 
+//fucntion for clicking on the start button
 start_btn.onclick = ()=>{
     info_box.classList.add("activeInfo");
 }
 
+//clicking the exit button 
 exit_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo");
 }
 
+//clicking on the continue button
 continue_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo");
     quiz_box.classList.add("activeQuiz");
@@ -45,7 +48,7 @@ quit_quiz.onclick = ()=>{
     window.location.reload();
 }
 
-//restart the quiz, reset everything when cliked on "Replay Quiz"
+//restart the quiz, reset everything when clicked on "Replay Quiz"
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); 
     result_box.classList.remove("activeResult"); 
@@ -64,7 +67,7 @@ restart_quiz.onclick = ()=>{
     next_btn.classList.remove("show"); 
 }
 
-//finished the question and user clicks on "next" button to proceed to next question
+//finished the question and user clicks on "Next Question" button to proceed to next question
 next_btn.onclick = ()=>{
     if(que_count < questions.length -1 ){
         que_count++;
@@ -97,7 +100,8 @@ function showQuestions(index){
     que_text.innerHTML = que_tag;
     option_list.innerHTML = option_tag;
     const option = option_list.querySelectorAll(".option");
-    for (let i = 0; i < option.length; i++)
+
+    for (let i = 0; i < option.length; i++)  //iterate through the 5 questions in questions.js and change their question number index, options etc 
     {
         option[i].setAttribute("onclick", "optionSelected(this)")
     }
@@ -113,7 +117,7 @@ function optionSelected(answer){
     let userAns = answer.textContent;
     let correctAns = questions[que_count].answer;
     let allOptions = option_list.children.length;
-    if(userAns == correctAns)
+    if(userAns == correctAns)  //if correct answer
     {
         userScore +=1;
         console.log(userScore);
@@ -135,13 +139,14 @@ function optionSelected(answer){
         }
     }
 
+    // if dont answer the question within the 15 second time limit, will disable the question 
     for (let i = 0; i < allOptions; i++) {
         option_list.children[i].classList.add("disabled");
     }
     next_btn.style.display = "block";
 }
 
-//show different result messages when have different scores 
+//show different result messages according to different scores 
 function showResultBox(){
     info_box.classList.remove("activeInfo");
     info_box.classList.remove("activeQuiz");
@@ -150,7 +155,7 @@ function showResultBox(){
     if(userScore == 5){
         let scoreTag = '<span>Awesome! You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
-        document.getElementById("luckyDrawButton").style.display = "block";  //if the suer scored 5, get the lucky draw button and make it display on screen for lucky draw participation
+        document.getElementById("luckyDrawButton").style.display = "block";  //if the user scored 5, get the lucky draw button and make it display on screen for lucky draw participation
     }
      else if(userScore == 4){
         let scoreTag = '<span>Congrats! You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
@@ -179,7 +184,7 @@ function showResultBox(){
     }
 }
 
-//count the number of questions (1 out of 5 questions etc)
+//display the number of questions (1 out of 5 questions etc)
 function queCounter(index){
     const bottom_ques_counter = quiz_box.querySelector(".total_que");
     let totalQuesCountTag = '<span><p>'+ index +'</p><p>of</p><p>'+ questions.length +'</p><p>Questions</p></span>';
@@ -193,11 +198,11 @@ function startTimer(time){
     function timer(){
         timeCount.textContent = time;
         time--;
-        if(time < 9){
+        if(time < 9){  //make it double digit 
             let addZero = timeCount.textContent;
             timeCount.textContent = "0" + addZero;
         }
-        if(time < 0){
+        if(time < 0){  //if time is up, 
             clearInterval(counter);
             timeCount.textContent = "00";
             timeOff.textContent = "Time is up.";
@@ -205,13 +210,14 @@ function startTimer(time){
             let correctAns = questions[que_count].answer;
             let allOptions = option_list.children.length;
 
+            //if the answer is correct, dispaly as correct answer with tick icon
             for (let i = 0; i < allOptions; i++) {
                 if(option_list.children[i].textContent == correctAns){
                     option_list.children[i].setAttribute("class", "option correct");
                     option_list.children[i].insertAdjacentHTML("beforeend", tickIcon);
                 }
             }
-            for (let i = 0; i < allOptions; i++) {
+            for (let i = 0; i < allOptions; i++) {  //same thing as line 142 for loop where if user answer beyong the time limit 
                 option_list.children[i].classList.add("disabled");
             }
             next_btn.style.display = "block";

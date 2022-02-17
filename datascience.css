@@ -54,7 +54,7 @@ section
     animation: animate 1.5s ease-in-out forwards;
 }
 
-
+/*no animatestop*/
 @keyframes animate  /*is to animate the image tiles in a wave animation*/
 {
     0%  /*beginning offset of 0%*/

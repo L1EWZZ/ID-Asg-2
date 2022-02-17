@@ -15,7 +15,7 @@ window.onload = function(){
             EFFECT.style.transform = 'translateX(-50px)';
         }
     }
-    scrollEffect();
+    scrollEffect();  //calling the scroll effect according to window scroll y axis 
 }
 
 /*script for creating tiles in a loop */
