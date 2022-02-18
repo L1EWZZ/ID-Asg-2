@@ -15,10 +15,14 @@ Viewers should be able to scroll up and down in landing page or go to the differ
 -- mainIndex.html would be the main landing page which includes a navbar with clickable buttons to go to the different sections, a real time two digit clock, a switch which when checked can turn off and on the lights of the motel image. To add on, there is a clickable button which brings users to top of the screen and a feedback section which stores feedback from users in google sheet.
 
 [.] Porgramming is needed not only in courses of the ICT section but also in the real world where technology gets increasingly better, thus About section tells user why programming is important in real life scenario and why it will be needed in the different courses.
+
 [.] Courses section will allow user to click on the different courses provided in ICT section and view more about them in the seperate webpages.
+
 [.] Quiz section will allow view to click and pariticipate in a mini quiz about programming languages, whereby if they obtain full marks they can enter their names in a lucky draw forum.
+
 [.] Feedback section will allow viewers to enter their names, email and feedback, where all information is sent and stored in google sheet to allow users to view. When user sends a feedback, message showing "Feedback has sent successfully!" will notify the viewer.
 https://docs.google.com/spreadsheets/d/1_g9f3Kq5h5kfm3heWNsiSRBXYxteHQYn15QjGVE_AXk/edit?usp=sharing --> google sheet viewing link 
+
 [.] The switch uses a javascript (mainIndex.js), when the checkbox is checked/clicked, it swicthes between two images one with lights on and the other with no lights. Two digit clock uses same javascript through setInterval method. Button which brings user to top of the screen uses same javascript, where it only appears when screen is scrolled to certain point and brings user to top of webpage when clicked.
 
 
@@ -66,4 +70,4 @@ Links:
                                                             -----------
                                                             Github Link
                                                             -----------
-                                                https://github.com/L1EWZZ/ID-Asg-2.git
+                                                https://l1ewzz.github.io/ID-Asg-2/
