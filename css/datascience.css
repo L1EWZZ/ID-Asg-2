@@ -66,7 +66,7 @@ section
     50%  /*middle offset of 50%*/
     {
         opacity: 1;
-        background: url('../ID-Asg-2/assets/database.jpg');
+        background: url('../assets/database.jpg');
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -77,7 +77,7 @@ section
     {
         opacity: 1;
         transform: scale(1) translateY(0px);
-        background: url('../ID-Asg-2/assets/database.jpg');
+        background: url('../assets/database.jpg');
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;

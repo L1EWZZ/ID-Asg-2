@@ -7,7 +7,7 @@
 }
 
 body{
-    background: url('assets/picture-1.jpg');
+    background: url('../assets/picture-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 10px;

@@ -62,7 +62,7 @@ section h1{
     0%  /*start of tiles animation*/
     {
         transform: translateZ(2000px);
-        background: url(./assets/immersivemedia.jpg);
+        background: url(../assets/immersivemedia.jpg);
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
@@ -72,7 +72,7 @@ section h1{
     100%  /*end of tiles animation*/
     {
         transform: translateZ(0px);
-        background: url(./assets/immersivemedia.jpg);
+        background: url(../assets/immersivemedia.jpg);
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
@@ -83,7 +83,7 @@ section h1{
 
 .section .active .banner .tiles{  /*control the tile movement (how the tiles move when loading the page)*/
     animation: animateStop 4s ease-in-out forwards;
-    background: url(./assets/immersivemedia.jpg);
+    background: url(../assets/immersivemedia.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -96,7 +96,7 @@ section h1{
     0%
     {
         transform: translateZ(0px);  
-        background: url(./assets/immersivemedia.jpg);
+        background: url(../assets/immersivemedia.jpg);
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
@@ -106,7 +106,7 @@ section h1{
     100%
     {
         transform: translateZ(2000px);
-        background: url(./assets/immersivemedia.jpg);
+        background: url(../assets/immersivemedia.jpg);
         background-position: center;
         background-attachment: fixed;
         background-size: cover;

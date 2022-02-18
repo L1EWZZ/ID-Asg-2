@@ -27,7 +27,7 @@ html, body{
 
 .container{  /*setting width, height, colors of whole image container*/
     background: #282c34;
-    background: url('./assets/Night_3.png');
+    background: url('../assets/Night_3.png');
     background-size: cover;
     background-repeat: no-repeat;
     width:92vw;
@@ -145,7 +145,7 @@ html, body{
     padding-top: 5px;
     font-size: calc(7px + 2vmin);
     color:white;
-    background-image: url("./assets/programming\ evolution.jpg");
+    background-image: url("../assets/programming\ evolution.jpg");
     background-blend-mode: screen;
     border-width: 0;
     border:0;
