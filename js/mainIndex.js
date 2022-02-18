@@ -22,10 +22,10 @@
         //checkbox to turn off light
         //method if event(checkbox is checked) happens, change the image of hotels and lights
         checkbox.onchange = (event) => {
-            if (event.target.checked) {  //if its checked, change the image source to thie image, creating off/on of light image 
-                img.src = "./assets/Night_5.png"
+            if (event.target.checked) {  //if its checked, change the image source to the image, creating off/on of light image 
+                img.src = "../assets/Night_5.png"
             } else {
-                img.src = "./assets/Night_4.png";
+                img.src = "../assets/Night_4.png";
             }
         }
 })();
