@@ -8,3 +8,4 @@ Data Science webpage allows user to click to view more about the course and also
 KeyFrames animatestop has been used to do tiles animation in datascience and Immersive Media webpage, and button hover before and after has been used to create red button hovering animation.
 API jas been used in the lucky draw participation forum to record down participations' details.
 Google sheet linking has been used to record each of the users' feedback.
+Information on each course credits to Ngee Ann Poly website 
