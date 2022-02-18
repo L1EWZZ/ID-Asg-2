@@ -66,4 +66,4 @@ Links:
                                                             -----------
                                                             Github Link
                                                             -----------
-                                                https://github.com/L1EWZZ/ID-Asg-2.git
+                                                https://l1ewzz.github.io/ID-Asg-2/
